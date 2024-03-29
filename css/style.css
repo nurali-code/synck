@@ -1783,7 +1783,7 @@ img {
 .how-we-do-card .how-we-do-content h4 {
     color: var(--primary_color);
     font-size: 17px;
-    margin-bottom: 5px;
+    margin-bottom: 0 !important
 }
 .how-we-do-card .how-we-do-content p {
     margin: 0;
