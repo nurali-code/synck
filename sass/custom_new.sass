@@ -4,6 +4,28 @@
 
 .hero-company
     &-boxes
+        flex-wrap: wrap
 
     &-box
-        max-width: 25%
+        width: 28%
+
+        @media screen and (max-width: 912px)
+            width: calc( 50% - 12px )
+        
+        @media screen and (max-width: 600px)
+            width: 100%
+
+.header-area .navbar-wrapper ul li.dropdown-menu-item a, .header-area .navbar-wrapper ul li.mega-menu-item a
+    display: block
+    padding: 0
+    &::after
+        display: none
+
+.cta-area .cta-body h2
+    font-size: 60px
+    margin-bottom: 40px
+    @media screen and (max-width: 1700px)
+        font-size: 50px
+    @media screen and (max-width: 585px)
+        font-size: 30px
+        padding: 0 10px

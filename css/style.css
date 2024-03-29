@@ -1387,7 +1387,7 @@ img {
     padding-bottom: 120px;
 }
 .hero-company-box {
-    padding: 70px 88px 70px 88px;
+    padding: 50px 78px;
 }
 .hero-company-box h1 {
     font-size: 56px;
@@ -2482,7 +2482,7 @@ img {
 .about-timeline .about-timeline-item:before {
     content: '';
     height: calc(100% + 68px);
-    /* border-left: 1px dashed var(--primary_color); */
+    border-left: 1px dashed var(--primary_color);
     background: url(../img/line-shape-4.png) no-repeat;
     background-size: cover;
     width: 1px;
