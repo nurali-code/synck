@@ -7,10 +7,10 @@ $('.menu-bar, .close-menu-bar').on('click', function () {
 // })
 
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 5) { $('.header-area').addClass('is-fixed'); }
-    else { $('.header-area').removeClass('is-fixed'); }
-});
+// $(window).scroll(function () {
+//     if ($(this).scrollTop() > 5) { $('.header-area').addClass('is-fixed'); }
+//     else { $('.header-area').removeClass('is-fixed'); }
+// });
 
 // $('a[href*="#"]').on('click', function (e) {
 //     e.preventDefault();

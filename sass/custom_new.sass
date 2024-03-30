@@ -1,6 +1,10 @@
 .footer-area
+    background-color: transparent
+    a, .copyright-area p
+        color: #1C1C1C !important
+
     .custom-row
-        border-top: 1px solid rgba(255 255 255 / 20%)
+        border-top: 1px solid rgba(#1C1C1C, .2)
 
 .hero-company
     &-boxes
@@ -11,18 +15,25 @@
 
         @media screen and (max-width: 912px)
             width: calc( 50% - 12px )
-        
+
         @media screen and (max-width: 600px)
             width: 100%
 
-.header-area .navbar-wrapper ul li.dropdown-menu-item a, .header-area .navbar-wrapper ul li.mega-menu-item a
-    display: block
-    padding: 0
-    &::after
-        display: none
+.header-area
+    position: absolute
+    .navbar-wrapper ul
+        li.dropdown-menu-item a,
+        li.mega-menu-item a
+            display: block
+            padding: 0 10px
+
+            &::after
+                display: none
 
 .cta-area .cta-body h2
     font-size: 60px
+    max-width: 680px
+    margin: 0 auto 
     margin-bottom: 40px
     @media screen and (max-width: 1700px)
         font-size: 50px
@@ -32,42 +43,50 @@
 
 .quick
     padding: 70px 0 80px
-    h2 
+    h2
         margin: 0 25px 0 0
 
-    &-wrap 
+    &-wrap
         flex-wrap: wrap
         gap: 40px
 
-    &__link 
+    &__link
         font-size: 22px
         color: #000
         &:hover
+            color: var(--primary_color)
             text-decoration: underline !important
 
     @media screen and ( max-width: 800px )
-        &-wrap 
+        &-wrap
             gap: 25px
 
-        h2 
+        h2
             width: 100%
             margin: 0 0 10px
 
-        &__link 
+        &__link
             font-size: 20px
 
 .stekall
     position: relative
     z-index: 1
     padding-bottom: 100px
-    .how-we-do-area
+    h2
         position: sticky
-        top: 60px
-        left: 0
+        top: 0
+        z-index: 9999
+        padding-top: 15px 
+        padding-bottom: 15px
+        margin-bottom: 40px
         background-color: #fff
+    .how-we-do-area
+        padding-top: 0
+        position: sticky
+        top: 90px
+        left: 0
+        margin-bottom: 40px
+        // background-color: #fff
 
         @media screen and (max-width: 1200px)
             padding-top: 35px
-            
-        
-        

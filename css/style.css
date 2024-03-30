@@ -1401,7 +1401,7 @@ img {
     line-height: 1;
     font-weight: 500;
     color: var(--dark1);
-    margin-bottom: 15px;
+    margin-bottom: 0;
     font-family: var(--font_yantramanv);
 }
 .hero-company-box p {
