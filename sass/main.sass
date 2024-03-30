@@ -1,0 +1,106 @@
+@import 'custom_new'
+
+.stekall
+    padding: 100px 0
+    .custom-container
+        position: relative
+
+    .section-title
+        margin-bottom: 40px
+
+    &__heading
+        gap: 11px
+        padding: 0 70px
+        font-size: 31px
+        margin-bottom: 40px
+
+    &-box
+        position: static
+        margin-bottom: 60px
+        border-radius: 15px
+        padding: 50px 20px 40px
+        box-shadow: 0px 4px 20px 5px rgba(0,0,0,0.05)
+
+    &-item
+        width: 20%
+        text-align: center
+        position: relative
+        z-index: 1
+        &__heading
+            font-size: 20px
+
+        &::after
+            display: block
+            content: ''
+            width: 50%
+            height: 23px
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center center
+            background-image: url('../img/arrows-ver.svg')
+            @media screen and ( min-width: 992px )
+                background-image: url('../img/arrows.svg')
+                position: absolute
+                z-index: 111
+                top: 38px
+                right: -25%
+
+        &:last-child
+            &::after
+                display: none
+
+    &-img
+        width: 88px
+        aspect-ratio: 1/1
+        max-width: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 auto 7px
+        img
+
+    &__bottom
+        display: block
+        max-width: 90%
+        margin: 5px auto 0
+
+    @media screen and ( max-width: 992px )
+        &__heading
+            padding: 0
+            display: block !important
+            text-align: center
+            img
+                display: block
+                margin: 0 auto 10px
+
+        @media screen and ( min-width: 760px )
+            .section-title
+                width: 100%
+
+            .custom-container
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+
+            &-box
+                max-width: 31%
+                
+        &-row
+
+        &-box
+            width: 100%
+            padding: 40px
+
+        &-item
+            width: 100%
+            max-width: 100%
+            &::after
+                width: 23px
+                height: 50px
+                margin: 15px auto
+
+        &-img
+            width: 60px
+
+    @media screen and ( max-width: 760px )
+        max-width: 100%
