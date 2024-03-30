@@ -50,12 +50,19 @@
             background-size: contain
             background-position: center center
             background-image: url('../img/arrows-ver.svg')
-            @media screen and ( min-width: 992px )
+
+        &.--red::after
+            background-image: url('../img/arrows_red-ver.svg')
+
+        @media screen and ( min-width: 992px )
+            &::after
                 background-image: url('../img/arrows.svg')
                 position: absolute
                 z-index: 111
                 top: 38px
                 right: -25%
+            &.--red::after
+                background-image: url('../img/arrows_red.svg')
 
         &:last-child
             &::after
