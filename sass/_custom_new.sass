@@ -6,6 +6,12 @@
     .custom-row
         border-top: 1px solid rgba(#1C1C1C, .2)
 
+.theme-btn, .theme-btn2
+    font-weight: 500
+    @media screen and (max-width: 912px)
+        font-size: 16px !important
+        
+
 .hero-company
     &-boxes
         flex-wrap: wrap
@@ -35,6 +41,12 @@
 
             &::after
                 display: none
+
+    @media screen and (max-width: 1350px)
+        .navbar-wrapper
+            border-radius: 0 !important
+    
+    
 
 .cta-area .cta-body h2
     font-size: 60px
