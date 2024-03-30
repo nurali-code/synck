@@ -9,9 +9,13 @@
 .hero-company
     &-boxes
         flex-wrap: wrap
+        padding: 0
+        border: none
 
     &-box
         width: 28%
+        background-color: #E7EDFB
+        text-align: center
 
         @media screen and (max-width: 912px)
             width: calc( 50% - 12px )
@@ -33,7 +37,7 @@
 .cta-area .cta-body h2
     font-size: 60px
     max-width: 680px
-    margin: 0 auto 
+    margin: 0 auto
     margin-bottom: 40px
     @media screen and (max-width: 1700px)
         font-size: 50px
@@ -42,17 +46,17 @@
         padding: 0 10px
 
 .quick
-    padding: 70px 0 80px
-    h2
-        margin: 0 25px 0 0
-
     &-wrap
+        padding: 50px 0 
         flex-wrap: wrap
         gap: 40px
 
     &__link
-        font-size: 22px
+        text-align: center
+        min-width: 20%
+        font-size: 26px
         color: #000
+        color: var(--primary_color)
         &:hover
             color: var(--primary_color)
             text-decoration: underline !important
